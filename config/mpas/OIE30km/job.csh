@@ -19,7 +19,7 @@ setenv HofXNodes 32
 setenv HofXPEPerNode 16
 setenv HofXMemory 109
 
-setenv VerifyObsJobMinutes 5
+setenv VerifyObsJobMinutes 15
 setenv VerifyObsNodes 1
 setenv VerifyObsPEPerNode 36
 
