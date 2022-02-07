@@ -61,7 +61,7 @@ set benchmarkObsList = ($l)
 
 ## ExpSuffix
 # a unique suffix to distinguish this experiment from others
-set ExpSuffix = '_HofXOnly'
+set ExpSuffix = '_firstCycleOnly'
 
 ##############
 ## DA settings
