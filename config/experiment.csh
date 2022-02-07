@@ -9,7 +9,7 @@
 # I = variational Inner loop
 # E = variational Ensemble
 # OPTIONS:
-#   + OIE120km -- 3denvar, eda_3denvar
+#   + OIE120km -- 3dvar, 3denvar, eda_3denvar
 #   + O30kmIE120km -- dual-resolution 3denvar
 #   + OIE60km -- eda_3denvar only
 #   + TODO: OIE60km -- 3denvar, requires generating MPASSeaVariables update files from GFS analyses
@@ -31,6 +31,18 @@ setenv MPASGridDescriptor O30kmIE60km
 #     - TODO: enable QC
 #     - TODO: enable VarBC
 setenv FirstCycleDate 2018041418
+
+
+#######################
+# workflow date control
+#######################
+## InitializationType
+# Indicates the type of initialization at the initial cycle: cold or warm start
+# OPTIONS:
+#   ColdStart - generate first forecast online from an external GFS analysis
+#   WarmStart - copy a pre-generated forecast
+setenv InitializationType WarmStart
+
 
 ## benchmarkObsList
 # base set of observation types assimilated in all experiments
@@ -78,7 +90,8 @@ set l = ($l $benchmarkObsList)
 set variationalObsList = ($l)
 
 ## DAType
-# OPTIONS: 3denvar, eda_3denvar, 3dvarId
+# OPTIONS: 3dvar, 3denvar, eda_3denvar
+# Note: 3dvar currently only works for OIE120km
 setenv DAType 3denvar
 
 ## nInnerIterations
