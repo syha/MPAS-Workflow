@@ -13,7 +13,7 @@
   obs error: *ObsErrorDiagonal
   obs operator:
     name: SfcPCorrected
-    da_psfc_scheme: UKMO   # or WRFDA
+    da_psfc_scheme: WRFDA  # UKMO   # or WRFDA
   linear obs operator:
     name: Identity
     observation alias file: obsop_name_map.yaml

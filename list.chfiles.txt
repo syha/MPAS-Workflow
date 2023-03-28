@@ -1,0 +1,11 @@
+	modified:   config/jedi/ObsPlugs/hofx/base/sfc.yaml
+	modified:   config/jedi/ObsPlugs/hofx/filters/sfc.yaml
+	modified:   config/jedi/ObsPlugs/variational/base/sfc.yaml
+	modified:   config/jedi/ObsPlugs/variational/filters/sfc.yaml
+
+scenarios/3denvar_OIE120km_WarmStart_IAU.yaml
+# commonBuild: /glade/work/syha/mpas-bundle-build   # error in liblapack
+=> Use default build, instead:
+https://github.com/NCAR/MPAS-Workflow/blob/20c31b8f9ae63e5eda2ee96e56e18acfeb625b96/scenarios/base/builds.yaml#L3 
+commonBuild: /glade/work/bjung/panda-c/build/mpas-bundle_gnu-openmpi_24FEB2023_single
+

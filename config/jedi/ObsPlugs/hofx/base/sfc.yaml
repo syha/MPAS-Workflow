@@ -13,6 +13,6 @@
   obs error: *ObsErrorDiagonal
   obs operator:
     name: SfcPCorrected
-    da_psfc_scheme: UKMO   # or WRFDA
+    da_psfc_scheme: WRFDA  # UKMO   # or WRFDA
   get values:
     <<: *GetValues

@@ -4,7 +4,7 @@
   - filter: Difference Check
     reference: MetaData/stationElevation
     value: GeoVaLs/surface_altitude
-    threshold: 200.0
+    threshold: 100.0
   - filter: Background Check
     threshold: 3.0
     <<: *multiIterationFilter
